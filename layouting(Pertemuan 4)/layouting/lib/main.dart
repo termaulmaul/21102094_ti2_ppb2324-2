@@ -28,16 +28,15 @@ class MyApp extends StatelessWidget {
                     //image
                     Container(
                       padding: EdgeInsets.all(20),
-                      decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Colors.lightBlueAccent),
-                      child: Icon(
-                        Icons.person,
-                        size: 30,
+                      decoration: BoxDecoration(),
+                      child: CircleAvatar(
+                        backgroundImage: AssetImage("assets/gambar3.png"),
+                        radius: 45,
+                        backgroundColor: Colors.transparent,
                       ),
                     ),
                     SizedBox(
-                      height: 15,
+                      height: 2,
                     ),
                     //Nama
                     Text(
