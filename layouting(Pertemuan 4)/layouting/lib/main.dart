@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
                       decoration: BoxDecoration(),
                       child: CircleAvatar(
                         backgroundImage: AssetImage("assets/gambar3.png"),
-                        radius: 45,
+                        radius: 50,
                         backgroundColor: Colors.transparent,
                       ),
                     ),
