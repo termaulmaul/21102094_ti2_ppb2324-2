@@ -1,4 +1,6 @@
-# Tugas Pemrograman Perangkat Bergerak - Flutter
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=termaulmaul/21102094_ti2_ppb2324-2" />
+
+# Tugas Pemrograman Perangkat Bergerak - Flutter 
 
 ## Deskripsi
 
