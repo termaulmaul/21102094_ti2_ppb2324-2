@@ -1,6 +1,6 @@
 {
-    "name": "saving_app",
-    "short_name": "saving_app",
+    "name": "praktikum_06",
+    "short_name": "praktikum_06",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,4 +1,4 @@
-# saving_app
+# praktikum_06
 
 A new Flutter project.
 
