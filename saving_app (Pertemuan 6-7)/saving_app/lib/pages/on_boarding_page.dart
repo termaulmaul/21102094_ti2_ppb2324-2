@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../styles/colors.dart';
-import '../styles/text_style.dart';
+import 'package:saving_app/styles/colors.dart';
+import 'package:saving_app/styles/text_style.dart';
 
 class OnBoardingPage extends StatelessWidget {
   const OnBoardingPage({Key? key}) : super(key: key);
@@ -13,21 +13,21 @@ class OnBoardingPage extends StatelessWidget {
         color: kBgColor.withOpacity(0.5),
         child: Column(
           children: [
-            const SafeArea(
+            SafeArea(
               child: Image(
                 image: AssetImage('assets/images/ob-money.png'),
               ),
             ),
-            const SizedBox(
+            SizedBox(
               height: 30,
             ),
             Container(
-              padding: const EdgeInsets.all(26),
-              constraints: const BoxConstraints.expand(
+              padding: EdgeInsets.all(26),
+              constraints: BoxConstraints.expand(
                 height: 300,
                 width: 315,
               ),
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 color: kWhite,
                 borderRadius: BorderRadius.all(
                   Radius.circular(20),
@@ -39,7 +39,7 @@ class OnBoardingPage extends StatelessWidget {
                     'Welcome!',
                     style: kHeading5.copyWith(color: kBlack),
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 15,
                   ),
                   Text(
@@ -47,7 +47,7 @@ class OnBoardingPage extends StatelessWidget {
                     style: kSubtitle2.copyWith(color: kSuvaGray),
                     textAlign: TextAlign.center,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 70,
                   ),
                   TextButton(
@@ -55,21 +55,21 @@ class OnBoardingPage extends StatelessWidget {
                       Navigator.pushNamedAndRemoveUntil(
                           context, '/main', (route) => false);
                     },
+                    child: Text(
+                      'Get Started',
+                      style: kButton1.copyWith(color: kWhite),
+                    ),
                     style: TextButton.styleFrom(
                       backgroundColor: kBlueRibbon,
-                      padding: const EdgeInsets.symmetric(
+                      padding: EdgeInsets.symmetric(
                         vertical: 14,
                         horizontal: 36,
                       ),
-                      shape: const RoundedRectangleBorder(
+                      shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(
                           Radius.circular(10),
                         ),
                       ),
-                    ),
-                    child: Text(
-                      'Get Started',
-                      style: kButton1.copyWith(color: kWhite),
                     ),
                   )
                 ],
