@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
   final String? data;
-  const SecondPage({Key? key, this.data}) : super(key: key);
+  const SecondPage({super.key, this.data});
 
   @override
   Widget build(BuildContext context) {
