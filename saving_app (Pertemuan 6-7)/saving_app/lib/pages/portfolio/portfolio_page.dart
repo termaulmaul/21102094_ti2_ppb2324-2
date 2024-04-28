@@ -8,120 +8,126 @@ class PortfolioPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          Container(
-            padding: EdgeInsets.only(top: 25),
-            height: 240,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.vertical(
-                bottom: Radius.circular(40),
-              ),
-              image: DecorationImage(
-                image: AssetImage('assets/images/bg-container-2.png'),
-                fit: BoxFit.cover,
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: kGrey,
-                  blurRadius: 5,
-                  offset: Offset.fromDirection(2),
+    return Column(
+      children: [
+        Container(
+          padding: EdgeInsets.only(top: 25),
+          height: 240,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.vertical(
+              bottom: Radius.circular(40),
+            ),
+            image: DecorationImage(
+              image: AssetImage('assets/images/bg-container-2.png'),
+              fit: BoxFit.cover,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: kGrey,
+                blurRadius: 5,
+                offset: Offset.fromDirection(2),
+              )
+            ],
+          ),
+          child: SafeArea(
+            child: Column(
+              children: [
+                Text(
+                  'My Portfolio',
+                  style: kHeading6.copyWith(
+                    color: kWhite,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Text(
+                  'Savings Value',
+                  style: kSubtitle2.copyWith(
+                    color: kWhite,
+                  ),
+                ),
+                SizedBox(
+                  height: 12,
+                ),
+                Text(
+                  'Rp 12.480.000',
+                  style: kHeading5.copyWith(
+                    color: kWhite,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Expanded(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                _portfolioCardList(
+                  'assets/icons/pension.png',
+                  'Pension savings funds',
+                  0.3,
+                  'Rp. 10.430.000 / Rp. 40.000.000',
+                  'Last saving February 19',
+                ),
+                _portfolioCardList(
+                  'assets/icons/camera.png',
+                  'Camera',
+                  0.5,
+                  'Rp. 2.050.000 / Rp. 4.000.000',
+                  'Last saving February 16',
+                ),
+                _portfolioCardList(
+                  'assets/icons/camera.png',
+                  'Camera',
+                  0.5,
+                  'Rp. 2.050.000 / Rp. 4.000.000',
+                  'Last saving February 16',
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(
+                    vertical: 20,
+                    horizontal: 30,
+                  ),
+                  child: TextButton(
+                    onPressed: () {},
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.add,
+                          size: 13,
+                          color: kLuckyBlue,
+                        ),
+                        Text(
+                          'add portfolio',
+                          style: kButton2.copyWith(
+                            color: kLuckyBlue,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        )
+                      ],
+                    ),
+                    style: TextButton.styleFrom(
+                      backgroundColor: kWhite,
+                      padding: EdgeInsets.symmetric(vertical: 15),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(15),
+                        ),
+                      ),
+                      elevation: 4,
+                    ),
+                  ),
                 )
               ],
             ),
-            child: SafeArea(
-              child: Column(
-                children: [
-                  Text(
-                    'My Portfolio',
-                    style: kHeading6.copyWith(
-                      color: kWhite,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Text(
-                    'Savings Value',
-                    style: kSubtitle2.copyWith(
-                      color: kWhite,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 12,
-                  ),
-                  Text(
-                    'Rp 12.480.000',
-                    style: kHeading5.copyWith(
-                      color: kWhite,
-                    ),
-                  ),
-                ],
-              ),
-            ),
           ),
-          _portfolioCardList(
-            'assets/icons/pension.png',
-            'Pension savings funds',
-            0.3,
-            'Rp. 10.430.000 / Rp. 40.000.000',
-            'Last saving February 19',
-          ),
-          _portfolioCardList(
-            'assets/icons/camera.png',
-            'Camera',
-            0.5,
-            'Rp. 2.050.000 / Rp. 4.000.000',
-            'Last saving February 16',
-          ),
-          _portfolioCardList(
-            'assets/icons/camera.png',
-            'Camera',
-            0.5,
-            'Rp. 2.050.000 / Rp. 4.000.000',
-            'Last saving February 16',
-          ),
-          Container(
-            margin: EdgeInsets.symmetric(
-              vertical: 20,
-              horizontal: 30,
-            ),
-            child: TextButton(
-              onPressed: () {},
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.add,
-                    size: 13,
-                    color: kLuckyBlue,
-                  ),
-                  Text(
-                    'add portfolio',
-                    style: kButton2.copyWith(
-                      color: kLuckyBlue,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  )
-                ],
-              ),
-              style: TextButton.styleFrom(
-                backgroundColor: kWhite,
-                padding: EdgeInsets.symmetric(vertical: 15),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(15),
-                  ),
-                ),
-                elevation: 4,
-              ),
-            ),
-          )
-        ],
-      ),
+        ),
+      ],
     );
   }
 
