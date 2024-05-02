@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/macprom1/21102094_ti2_ppb2324-2/firebase_auth (Pertemuan 8)/firebase_auth/android/app/src/main/shaders"/></dataSet><dataSet config="release" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/macprom1/21102094_ti2_ppb2324-2/firebase_auth (Pertemuan 8)/firebase_auth/android/app/src/release/shaders"/></dataSet></merger>

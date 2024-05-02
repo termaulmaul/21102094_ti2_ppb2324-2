@@ -1,4 +1,4 @@
-# firebase_auth
+# praktikum_firebase_auth
 
 A new Flutter project.
 

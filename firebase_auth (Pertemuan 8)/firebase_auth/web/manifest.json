@@ -1,6 +1,6 @@
 {
-    "name": "firebase_auth",
-    "short_name": "firebase_auth",
+    "name": "praktikum_firebase_auth",
+    "short_name": "praktikum_firebase_auth",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

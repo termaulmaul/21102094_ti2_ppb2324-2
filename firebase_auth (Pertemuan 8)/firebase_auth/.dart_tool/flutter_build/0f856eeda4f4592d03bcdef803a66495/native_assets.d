@@ -1,0 +1,1 @@
+ /Users/macprom1/21102094_ti2_ppb2324-2/firebase_auth\ (Pertemuan\ 8)/firebase_auth/.dart_tool/flutter_build/0f856eeda4f4592d03bcdef803a66495/native_assets.yaml: 

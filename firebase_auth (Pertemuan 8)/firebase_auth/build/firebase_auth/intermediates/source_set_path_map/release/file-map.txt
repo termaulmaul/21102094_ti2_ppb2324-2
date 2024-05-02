@@ -1,0 +1,17 @@
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-annotation-experimental-1.1.0-0 /Users/macprom1/.gradle/caches/transforms-3/06cc3e832b17a0c6bffe016fe2ff144b/transformed/jetified-annotation-experimental-1.1.0/res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-window-java-1.0.0-beta04-1 /Users/macprom1/.gradle/caches/transforms-3/1ff451ef3974b101df433af7be5cccc4/transformed/jetified-window-java-1.0.0-beta04/res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-window-1.0.0-beta04-2 /Users/macprom1/.gradle/caches/transforms-3/22ff2317d37ea6753b9d6653836c2a92/transformed/jetified-window-1.0.0-beta04/res
+io.flutter.plugins.firebase.auth.firebase_auth-core-1.6.0-3 /Users/macprom1/.gradle/caches/transforms-3/3182888c8a22a9c242cbf25bd3ba6461/transformed/core-1.6.0/res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-play-services-base-18.0.1-4 /Users/macprom1/.gradle/caches/transforms-3/42fc57bd0662c57e92eb36d18b4edbf7/transformed/jetified-play-services-base-18.0.1/res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-firebase-common-20.4.3-5 /Users/macprom1/.gradle/caches/transforms-3/73bbe6ab73bdf6f045c8e849866c1c9c/transformed/jetified-firebase-common-20.4.3/res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-play-services-basement-18.3.0-6 /Users/macprom1/.gradle/caches/transforms-3/8f817bf59c6fda79d34296a1089a25ac/transformed/jetified-play-services-basement-18.3.0/res
+io.flutter.plugins.firebase.auth.firebase_auth-browser-1.4.0-7 /Users/macprom1/.gradle/caches/transforms-3/b6921df971f0c377a2a1d2fe51a38b37/transformed/browser-1.4.0/res
+io.flutter.plugins.firebase.auth.firebase_auth-main-8 /Users/macprom1/.pub-cache/hosted/pub.dev/firebase_auth-4.19.4/android/src/main/res
+io.flutter.plugins.firebase.auth.firebase_auth-release-9 /Users/macprom1/.pub-cache/hosted/pub.dev/firebase_auth-4.19.4/android/src/release/res
+io.flutter.plugins.firebase.auth.firebase_auth-pngs-10 /Users/macprom1/21102094_ti2_ppb2324-2/firebase_auth (Pertemuan 8)/firebase_auth/build/firebase_auth/generated/res/pngs/release
+io.flutter.plugins.firebase.auth.firebase_auth-resValues-11 /Users/macprom1/21102094_ti2_ppb2324-2/firebase_auth (Pertemuan 8)/firebase_auth/build/firebase_auth/generated/res/resValues/release
+io.flutter.plugins.firebase.auth.firebase_auth-rs-12 /Users/macprom1/21102094_ti2_ppb2324-2/firebase_auth (Pertemuan 8)/firebase_auth/build/firebase_auth/generated/res/rs/release
+io.flutter.plugins.firebase.auth.firebase_auth-mergeReleaseResources-13 /Users/macprom1/21102094_ti2_ppb2324-2/firebase_auth (Pertemuan 8)/firebase_auth/build/firebase_auth/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.firebase.auth.firebase_auth-mergeReleaseResources-14 /Users/macprom1/21102094_ti2_ppb2324-2/firebase_auth (Pertemuan 8)/firebase_auth/build/firebase_auth/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.firebase.auth.firebase_auth-merged_res-15 /Users/macprom1/21102094_ti2_ppb2324-2/firebase_auth (Pertemuan 8)/firebase_auth/build/firebase_auth/intermediates/merged_res/release
+io.flutter.plugins.firebase.auth.firebase_auth-packaged_res-16 /Users/macprom1/21102094_ti2_ppb2324-2/firebase_auth (Pertemuan 8)/firebase_auth/build/firebase_core/intermediates/packaged_res/release
