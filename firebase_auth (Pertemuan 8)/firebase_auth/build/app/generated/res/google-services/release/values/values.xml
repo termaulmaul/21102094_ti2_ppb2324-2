@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="gcm_defaultSenderId" translatable="false">941490062880</string>
-    <string name="google_api_key" translatable="false">AIzaSyDMYEne0E386h3QIMLqyx_XtI7thCXB1gE</string>
-    <string name="google_app_id" translatable="false">1:941490062880:android:a7f43fc91b255412c39e45</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDMYEne0E386h3QIMLqyx_XtI7thCXB1gE</string>
-    <string name="google_storage_bucket" translatable="false">prakflutterfirebase-9c62e.appspot.com</string>
-    <string name="project_id" translatable="false">prakflutterfirebase-9c62e</string>
-</resources>
