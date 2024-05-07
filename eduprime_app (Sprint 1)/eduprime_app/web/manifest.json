@@ -1,6 +1,6 @@
 {
-    "name": "eduprime_app",
-    "short_name": "eduprime_app",
+    "name": "praktikum_firebase_auth",
+    "short_name": "praktikum_firebase_auth",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

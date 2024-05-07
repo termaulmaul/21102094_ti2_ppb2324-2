@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1060371077242",
+    "project_id": "eduprime-e08fa",
+    "storage_bucket": "eduprime-e08fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060371077242:android:7ae51f1e19a2af211103c3",
+        "android_client_info": {
+          "package_name": "com.example.praktikum_firebase_auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX4nIKaFOKgJ20KexnaBZhK7OXlv2mhiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
