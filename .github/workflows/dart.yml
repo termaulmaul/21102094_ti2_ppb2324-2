@@ -1,42 +1,35 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
+# Nama workflow
 name: Dart
 
+# Event trigger untuk menjalankan workflow
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" ] # Jalankan saat ada push ke branch main
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main" ] # Jalankan saat ada pull request ke branch main
 
+# Job untuk membangun dan menjalankan tes
 jobs:
   build:
+    # Sistem operasi yang digunakan untuk menjalankan job
     runs-on: ubuntu-latest
 
+    # Langkah-langkah dalam job
     steps:
+      # Langkah pertama: Checkout kode dari repository
       - uses: actions/checkout@v4
 
-      # Note: This workflow uses the latest stable version of the Dart SDK.
-      # You can specify other versions if desired, see documentation here:
-      # https://github.com/dart-lang/setup-dart/blob/main/README.md
-      # - uses: dart-lang/setup-dart@v1
-      - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+      # Langkah kedua: Setup Dart SDK
+      - uses: dart-lang/setup-dart@v1 # Menggunakan versi stabil terbaru Dart SDK
 
+      # Langkah ketiga: Instal dependencies menggunakan `dart pub get`
       - name: Install dependencies
         run: dart pub get
 
-      # Uncomment this step to verify the use of 'dart format' on each commit.
-      # - name: Verify formatting
-      #   run: dart format --output=none --set-exit-if-changed .
-
-      # Consider passing '--fatal-infos' for slightly stricter analysis.
+      # Langkah keempat: Analyze kode menggunakan `dart analyze`
       - name: Analyze project source
         run: dart analyze
 
-      # Your project will need to have tests in test/ and a dependency on
-      # package:test for this step to succeed. Note that Flutter projects will
-      # want to change this to 'flutter test'.
+      # Langkah kelima: Jalankan tes menggunakan `dart test`
       - name: Run tests
         run: dart test
