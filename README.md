@@ -18,9 +18,6 @@ Thank you for stopping by! This repository is a part of my academic journey in I
 ## Practicum Assistant
 **Name:** Devit.NA
 
-## Project Overview
-Provide a brief description of the repository here. What is this project about? What are its key features or goals? Why should visitors be interested in this project?
-
 ## Getting Started
 
 ### Prerequisites
