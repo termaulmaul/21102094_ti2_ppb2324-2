@@ -1,48 +1,40 @@
 {
   "project_info": {
-    "project_number": "306834710746",
-    "project_id": "prakflutterfirebase-1c1bc",
-    "storage_bucket": "prakflutterfirebase-1c1bc.appspot.com"
+    "project_number": "941490062880",
+    "project_id": "prakflutterfirebase-9c62e",
+    "storage_bucket": "prakflutterfirebase-9c62e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:306834710746:android:b272243f99f49bf9cf05e3",
+        "mobilesdk_app_id": "1:941490062880:android:b51ae3bd0ff64cf6c39e45",
         "android_client_info": {
           "package_name": "com.example.praktikum_firebase_auth"
         }
       },
       "oauth_client": [
         {
-          "client_id": "306834710746-7417ktspqis0rmh6b8c5gqdv00b6itkq.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.praktikum_firebase_auth",
-            "certificate_hash": "d1f1723697dba7f61f691c1201862941eacabca4"
-          }
-        },
-        {
-          "client_id": "306834710746-svm1mqop7srjoane2d1d0iha99mkob1a.apps.googleusercontent.com",
+          "client_id": "941490062880-6qsuu05biuhlg91dggo172h4n26ogk3g.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDDHHZWpuTZ4yNr0vQns7n656liUAgRUVY"
+          "current_key": "AIzaSyDMYEne0E386h3QIMLqyx_XtI7thCXB1gE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "306834710746-svm1mqop7srjoane2d1d0iha99mkob1a.apps.googleusercontent.com",
+              "client_id": "941490062880-6qsuu05biuhlg91dggo172h4n26ogk3g.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "306834710746-j55ck16fipv455imtej5lpq6mb54nl5v.apps.googleusercontent.com",
+              "client_id": "941490062880-6uaus0h81fg8ck1a2vreq85qq27lfu6r.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.praktikum06"
+                "bundle_id": "com.example.praktikumFirebaseAuth"
               }
             }
           ]
