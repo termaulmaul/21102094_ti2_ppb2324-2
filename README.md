@@ -1,5 +1,10 @@
 # Welcome Visitor <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=termaulmaul.termaulmaul" />
 
+[![GitHub issues](https://img.shields.io/github/issues/termaulmaul/termaulmaul)](https://github.com/termaulmaul/termaulmaul/issues)
+[![GitHub forks](https://img.shields.io/github/forks/termaulmaul/termaulmaul)](https://github.com/termaulmaul/termaulmaul/network)
+[![GitHub stars](https://img.shields.io/github/stars/termaulmaul/termaulmaul)](https://github.com/termaulmaul/termaulmaul/stargazers)
+[![GitHub license](https://img.shields.io/github/license/termaulmaul/termaulmaul)](https://github.com/termaulmaul/termaulmaul/blob/main/LICENSE.md)
+
 Thank you for stopping by! This repository is a part of my academic journey in Information Technology, specifically focusing on Flutter development. Below you'll find some key details about the project and the team involved.
 
 ## About the Author
