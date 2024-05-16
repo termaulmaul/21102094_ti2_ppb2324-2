@@ -12,7 +12,7 @@ Thank you for stopping by! This repository is a part of my academic journey in I
 **Class:** TI02  
 **Student ID:** 21102094
 
-## Course Instructor
+## Instructor
 **Name:** Novian Adi Prasetyo, S.Kom., M.Kom.
 
 ## Practicum Assistant
