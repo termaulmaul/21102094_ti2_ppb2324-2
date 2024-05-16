@@ -2,35 +2,29 @@
 ## Flutter application build results
 /build/
 /ios/Flutter/flutter_assets/
-/.dart_tool/
-/.flutter-plugins
-/.flutter-plugins-dependencies
-/.flutter-plugins.lock
-/.idea/
-*.iml
-*.iws
-*.ipr
-.idea/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-plugins.lock
 
-## iOS build artifacts
-*.iml
-*.iws
-*.ipr
-.idea/
-.vscode/
-.vscode/
+## iOS related
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
 
-## Android build artifacts
-/build/
-.gradle/
-/captures/
-/local.properties
-/.idea/
-*.iml
-*.iws
-*.ipr
+## Android related
+/android/.gradle/
+/android/captures/
+/android/.idea/
+/android/local.properties
+android/app/build/
+android/.settings/
 
-## Visual Studio Code related
+## VS Code related
 .vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -38,32 +32,37 @@
 !.vscode/extensions.json
 .history/
 
-## Android Studio related
-*.iml
-*.iws
-*.ipr
-.idea/
-.gradle/
-/local.properties
-
 ## IntelliJ related
-*.iml
-*.iws
-*.ipr
 .idea/
+*.iml
+*.ipr
+*.iws
 
-## Other
+## macOS related
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+._*
+[._]*.swp
+[._]*.swo
+Thumbs.db
+
+## Windows related
+Thumbs.db
+ehthumbs.db
+
+# Temporary files
 *.class
 *.log
 *.rej
 *.orig
 *.bak
 *.swp
-Thumbs.db
-ehthumbs.db
-[Tt]humbs.db
-[Tt]humbs.db
-*.DS_Store?
-*.idea/
 
+# Packages
+.packages
+.pub/
+.pub-cache/
