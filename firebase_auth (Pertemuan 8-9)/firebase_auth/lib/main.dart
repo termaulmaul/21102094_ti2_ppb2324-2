@@ -7,14 +7,14 @@ import 'package:praktikum_firebase_auth/utils/routes.dart';
 
 import 'bloc/login/login_cubit.dart';
 import 'bloc/register/register_cubit.dart';
-import 'firebase_options.dart';
+// import 'firebase_options.dart';
 import 'ui/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+      // options: DefaultFirebaseOptions.currentPlatform,
+      );
   runApp(const MyApp());
 }
 
@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => RegisterCubit()),
       ],
       child: MaterialApp(
+        theme: ThemeData(useMaterial3: false),
         title: "Praktikum 6",
         debugShowCheckedModeBanner: false,
         navigatorKey: NAV_KEY,

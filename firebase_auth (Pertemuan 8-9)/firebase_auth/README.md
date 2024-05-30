@@ -1,6 +1,4 @@
-<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=termaulmaul.termaulmaul" />
-
-# firebase_auth
+# praktikum_firebase_auth
 
 A new Flutter project.
 
