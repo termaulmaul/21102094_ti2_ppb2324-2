@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: const Text('Note'),
+        title: const Text('21102094_Notepad'),
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
@@ -53,6 +53,9 @@ class _HomeScreenState extends State<HomeScreen> {
           showModalBottomSheet(
             context: context,
             isScrollControlled: true,
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.vertical(top: Radius.circular(25.0)),
+            ),
             builder: (context) {
               return Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -63,7 +66,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         TextFormField(
                           controller: titleController,
-                          decoration: const InputDecoration(hintText: 'Title'),
+                          decoration: InputDecoration(
+                            hintText: 'Title',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                            filled: true,
+                            fillColor: Colors.grey[200],
+                          ),
                           validator: (value) {
                             if (value!.isEmpty) {
                               return 'This field is required';
@@ -73,14 +83,20 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         const SizedBox(height: 10.0),
                         SizedBox(
-                            height: 300,
+                            height: 200,
                             child: TextFormField(
                               controller: noteController,
-                              maxLines: null, // Set this
-                              expands: true, // and this
+                              maxLines: null,
+                              expands: true,
                               keyboardType: TextInputType.multiline,
-                              decoration: const InputDecoration(
-                                  hintText: 'Write a note', filled: true),
+                              decoration: InputDecoration(
+                                hintText: 'Write a note',
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                                filled: true,
+                                fillColor: Colors.grey[200],
+                              ),
                               validator: (value) {
                                 if (value!.isEmpty) {
                                   return 'This field is required';
@@ -110,7 +126,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ScaffoldMessenger.of(context)
                                               .showSnackBar(
                                             const SnackBar(
-                                              content: Text('Note ditambahkan'),
+                                              content: Text('Note added'),
                                               backgroundColor: Colors.green,
                                             ),
                                           );
@@ -123,6 +139,12 @@ class _HomeScreenState extends State<HomeScreen> {
                                         }
                                       }
                                     },
+                                    style: ElevatedButton.styleFrom(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                      ),
+                                    ),
                                     child: const Text('Save'))))
                       ],
                     )),
@@ -152,6 +174,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 170.0,
                   width: MediaQuery.of(context).size.width,
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
+                    elevation: 4.0,
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
@@ -164,6 +190,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 width: MediaQuery.of(context).size.width * 0.7,
                                 child: Text(data['title'],
                                     maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
                                     style: const TextStyle(
                                         fontWeight: FontWeight.w700,
                                         fontSize: 20.0)),
@@ -175,6 +202,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                     showModalBottomSheet(
                                         context: context,
                                         isScrollControlled: true,
+                                        shape: const RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.vertical(
+                                              top: Radius.circular(25.0)),
+                                        ),
                                         builder: (context) {
                                           return Padding(
                                             padding: const EdgeInsets.all(16.0),
@@ -185,19 +216,44 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 children: [
                                                   TextFormField(
                                                     controller: titleEdc,
+                                                    decoration: InputDecoration(
+                                                      hintText: 'Title',
+                                                      border:
+                                                          OutlineInputBorder(
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(10.0),
+                                                      ),
+                                                      filled: true,
+                                                      fillColor:
+                                                          Colors.grey[200],
+                                                    ),
                                                   ),
                                                   const SizedBox(height: 10.0),
                                                   SizedBox(
-                                                      height: 300,
+                                                      height: 200,
                                                       child: TextFormField(
                                                         controller: noteEdc,
-                                                        maxLines:
-                                                            null, // Set this
-                                                        expands:
-                                                            true, // and this
+                                                        maxLines: null,
+                                                        expands: true,
                                                         keyboardType:
                                                             TextInputType
                                                                 .multiline,
+                                                        decoration:
+                                                            InputDecoration(
+                                                          hintText:
+                                                              'Write a note',
+                                                          border:
+                                                              OutlineInputBorder(
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        10.0),
+                                                          ),
+                                                          filled: true,
+                                                          fillColor:
+                                                              Colors.grey[200],
+                                                        ),
                                                       )),
                                                   Padding(
                                                       padding: EdgeInsets.only(
@@ -237,7 +293,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                                         .showSnackBar(
                                                                       const SnackBar(
                                                                           content:
-                                                                              Text('Note berhasil diperbarui')),
+                                                                              Text('Note updated')),
                                                                     );
                                                                     Navigator.pop(
                                                                         context);
@@ -252,6 +308,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                                                   }
                                                                 }
                                                               },
+                                                              style: ElevatedButton
+                                                                  .styleFrom(
+                                                                shape:
+                                                                    RoundedRectangleBorder(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              10.0),
+                                                                ),
+                                                              ),
                                                               child: const Text(
                                                                   'Save'))))
                                                 ],
@@ -275,7 +341,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   ),
                                   const PopupMenuItem<String>(
                                     value: 'delete',
-                                    child: Text('Hapus'),
+                                    child: Text('Delete'),
                                   ),
                                 ],
                               )
@@ -285,6 +351,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Text(data['note'],
                               textAlign: TextAlign.justify,
                               maxLines: 5,
+                              overflow: TextOverflow.ellipsis,
                               style: const TextStyle(fontSize: 17.0)),
                         ],
                       ),
